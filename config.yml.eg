@@ -1,0 +1,7 @@
+app_root: '/path/to/project'
+# Path to the icons directory (relative to the app root)
+icons_path: 'path/to/icons'
+# Path to the icons css file (relative to the app root)
+css_file: 'path/to/icons.css'
+# Path to the icons ie css file (relative to the app root) (Optional)
+ie_css_file: 'path/to/ie-icons.css'

@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require_relative 'icon_handler.rb'
+require 'yaml'
+
+config = YAML.load('config.yml')
+
+IconHandler.update("#{config['app_root']}/#{config['icons_path']}", {
+  css: "#{config['app_root']}/#{config['css_file']}",
+  ie_css: "#{config['app_root']}/#{config['ie_css_file']}"
+})
