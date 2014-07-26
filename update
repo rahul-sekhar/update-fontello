@@ -3,7 +3,8 @@
 require_relative 'icon_handler.rb'
 require 'yaml'
 
-config = YAML.load_file('config.yml')
+config_path = Pathname.new(File.dirname(__FILE__)).join('config.yml')
+config = YAML.load_file(config_path)
 
 IconHandler.update("#{config['app_root']}/#{config['icons_path']}", {
   css: "#{config['app_root']}/#{config['css_file']}",
